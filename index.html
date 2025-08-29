@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shortest Path Finder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Shortest Path Finder</h1>
+    <nav>
+      <button id="set-start">Set Start Point</button>
+      <button id="set-end">Set End Point</button>
+      <button id="add-obstacle">Add Obstacles</button>
+      
+      <!-- Label for terrain select -->
+      <label for="terrain-select" class="sr-only">Choose Terrain</label>
+      <select id="terrain-select" title="Terrain Selection">
+        <option value="normal">Normal (1)</option>
+        <option value="grass">Grass (2)</option>
+        <option value="water">Water (5)</option>
+        <option value="mountain">Mountain (10)</option>
+      </select>
+      <button id="set-terrain">Set Terrain</button>
+      
+      <!-- Label for algorithm select -->
+      <label for="algorithm" class="sr-only">Choose Algorithm</label>
+      <select id="algorithm" title="Algorithm Selection">
+        <option value="bfs">BFS</option>
+        <option value="dijkstra">Dijkstra</option>
+        <option value="astar">A*</option>
+      </select>
+      
+      <button id="find-path">Find Path</button>
+      <button id="reset">Reset Grid</button>
+      <button id="export">Export JSON</button>
+      <button id="import">Import JSON</button>
+      
+      <!-- Hidden but accessible label -->
+      <label for="importFile" class="sr-only">Upload JSON File</label>
+      <input type="file" id="importFile" title="Upload JSON File" />
+    </nav>
+  </header>
+  
+  <main>
+    <div id="grid-container"></div>
+  </main>
+  
+  <script src="script.js"></script>
+</body>
+</html>
