@@ -5,6 +5,10 @@ The Shortest Path Finder is an interactive pathfinding visualizer built using HT
 
 This tool also introduces terrain weights (Normal, Grass, Water, Mountain) and supports import/export of grid states, making it a versatile project for learning and experimenting with graph algorithms.
 
+🔗 Live Demo
+
+👉 Shortest Path Finder on Netlify
+
 📸 Demo Preview
 <table> <tr> <td> <img src="Images/Home.png" alt="Home Page" width="400"> </td> <td> <img src="Images/Obstacles.png" alt="Obstacles Example" width="400"> </td> </tr> <tr> <td align="center">Grid Initialization</td> <td align="center">Adding Obstacles</td> </tr> <tr> <td> <img src="Images/Dijkstra.png" alt="Dijkstra Algorithm" width="400"> </td> <td> <img src="Images/AStar.png" alt="A* Algorithm" width="400"> </td> </tr> <tr> <td align="center">Shortest Path using Dijkstra</td> <td align="center">Shortest Path using A*</td> </tr> </table>
 
@@ -54,7 +58,7 @@ style.css → Styling for grid, buttons, and terrains
 
 script.js → Core logic for pathfinding algorithms and interactions
 
-🛠️ How to Run
+🛠️ How to Run Locally
 
 Clone the repository:
 
